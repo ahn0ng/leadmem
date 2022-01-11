@@ -160,18 +160,36 @@ a:hover {
     cursor: pointer;
   }
 
-  #home {
-    height: 70px;
-    background-image: url(../img/home.png);
-    background-size: 50%;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
   #menu_icon {
     height: 40px;
     background: url("https://img.icons8.com/fluency-systems-filled/48/000000/menu.png")
       no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: block;
+  }
+
+  #list_icon {
+    height: 40px;
+    background: url("https://img.icons8.com/material-outlined/50/000000/ingredients-list.png")
+      no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: block;
+  }
+
+  #bookmark_icon {
+    height: 40px;
+    background: url("https://img.icons8.com/fluency-systems-regular/48/000000/star--v1.png")
+      no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: block;
+  }
+
+  #home_icon {
+    height: 40px;
+    background: url(../img/home.png) no-repeat;
     background-size: contain;
     background-position: center;
     display: block;
