@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript" text="javascript"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.8.23/jquery-ui.min.js"></script>
+    <script src="js/mobile.js" type="text/javascript" text="javascript"></script>
+    
+</head>
+<body>
+    <div id="warp">
+        <header>
+            <div id="logo">Lead Me<img src="" alt=""></div>
+        </header>
+
+        <nav>
+            <ul>
+                <li>메뉴</li>
+                <li>리스트</li>
+                <li id="home"></li>
+                <li>즐겨찾기</li>
+                <li id="user_btn">
+                    <span id="user_icon"></span>
+                    <span class="menu_name">MY</span>
+                </li>
+            </ul>
+        </nav>
+
+        <section id="route">
+            <div class="drag_bar"><span></span></div>
+            <article id="route_wrap">
+
+                <div class="user_name">
+                    <h4>김기찬 기사님</h4>
+                </div>
+
+                <div id="start">
+                    <div class="title"><h3>출발지</h3></div>
+                    <input type="search" class="place_input" id="departure" placeholder="주소"/>
+                </div>
+
+                <div id="place">
+                    <div class="title"><h3>목적지</h3></div>
+                    <div id="place_list">
+                        <div id="place_1" class="place_1">
+                            <div class="num_box"><h4>1</h4></div>
+                            <div class="address_box">
+                                <p>0000 San Jose</p>
+                                <span>무인 택배함에 보관</span>
+                            </div>
+                            <div class="place_menu">
+                                <span class="menu_btn">...</span>
+                            </div>
+                        </div>
+                        <div id="place_1" class="place_1">
+                            <div class="num_box"><h4>2</h4></div>
+                            <div class="address_box">
+                                <p>0000 Santa Clara</p>
+                                <span>배송 후 문자 보내기</span>
+                            </div>
+                            <div class="place_menu">
+                                <span class="menu_btn">...</span>
+                            </div>
+                        </div>
+                        <div id="place_1" class="place_1">
+                            <div class="num_box"><h4>3</h4></div>
+                            <div class="address_box">
+                                <p>0000 Berekeley</p>
+                                <span>9:00 AM 까지 배송</span>
+                            </div>
+                            <div class="place_menu">
+                                <span class="menu_btn">...</span>
+                            </div>
+                        </div>
+                        <div id="add_btn"><span>+</span></div>
+                    </div>
+                </div>
+                
+                <div id="finish">
+                    <div class="title"><h3>도착지</h3></div>
+                    <input type="search" class="place_input" id="arrive" placeholder="주소"/>
+                </div>
+                
+                <div id="route_btn">
+                    최적화
+                </div>
+            </article>
+        </section>
+
+        <section id="user">
+            <div id="user_wrap">
+                <div id="user_info">
+                    <h3>김기찬 기사님</h3>
+                </div>
+                <div id="user_menu">
+                    <div>개인 정보 수정</div>
+                    <div>출발지 / 도착지 설정</div>
+                    <div>리스트 관리</div>
+                    <div>설정</div>
+                    <div>고객센터</div>
+                </div>
+                <div id="user_end">
+                    <div>종료</div>
+                    <div>로그아웃</div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        
+    </div>
+</body>
+</html>
