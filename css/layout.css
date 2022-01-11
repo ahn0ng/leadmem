@@ -117,7 +117,7 @@ a:hover {
     /* 임시 지도 */
     background-image: url(../img/map.png);
     background-size: cover;
-    position: relative;
+    position: fixed;
   }
   header {
     width: 100%;
