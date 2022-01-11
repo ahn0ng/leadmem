@@ -168,8 +168,15 @@ a:hover {
     background-position: center;
   }
 
-  #user_btn {
+  #menu_icon {
+    height: 40px;
+    background: url("https://img.icons8.com/fluency-systems-filled/48/000000/menu.png")
+      no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: block;
   }
+
   #user_icon {
     height: 40px;
     background: url("https://img.icons8.com/material-outlined/48/000000/user-male-circle.png")
@@ -178,6 +185,7 @@ a:hover {
     background-position: center;
     display: block;
   }
+
   .menu_name {
     height: 30px;
     margin-top: 10px;
@@ -194,7 +202,7 @@ a:hover {
     z-index: 9997;
     border-radius: 50px 50px 0 0;
     /* bottom: 0px; */
-    bottom: -600px;
+    bottom: -70%;
     background-color: #fff;
   }
 

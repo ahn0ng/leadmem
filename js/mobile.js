@@ -13,7 +13,7 @@ $(function() {
         if(b==1){
             $("#route").stop().animate({"bottom":"0px"},500,"linear");
         }else{
-            $("#route").stop().animate({"bottom":"-600px"},500,"linear");
+            $("#route").stop().animate({"bottom":"-70%"},500,"linear");
         }
     });
 
