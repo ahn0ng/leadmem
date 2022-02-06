@@ -30,7 +30,7 @@ function resize_home(){
     screen_height =$(window).height();
     var route_height = screen_height*0.85;
     drag_top_height = route_height-0.02;
-    route_position = screen_height-100;
+    route_position = screen_height-110;
 
 
 
@@ -41,18 +41,49 @@ function resize_home(){
 $(function() {
     var c = 0;
     var d = 0;
+    var e = 0;
+    var f = 0;
 
     $("#user_btn").click(function(){
         c++;
         d=c%2;
 
         if(d==1){
+            $("#list").hide();
+            e=e*0;
+            f=f*0;
             $("#user").show();
             
         }else{
             $("#user").hide();
         }
     });
+    $("#list_btn").click(function(){
+        e++;
+        f=e%2;
+
+        if(f==1){
+            $("#user").hide();
+            c=c*0;
+            d=d*0;
+            $("#list").show();
+            
+        }else{
+            $("#list").hide();
+        }
+    });
+
+    $("#home_btn").click(function(){
+        c=c*0;
+        d=d*0;
+        e=e*0;
+        f=f*0;
+        $("#user").hide();
+        $("#list").hide();
+        
+    });
 });
+
+
 
 

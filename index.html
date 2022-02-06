@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/layout.css" rel="stylesheet" type="text/css">
-    <title>Document</title>
+    <title>Lead Me Mobile</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript" text="javascript"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
@@ -16,27 +16,29 @@
 <body>
     <div id="warp">
         <header>
-            <div id="logo">Lead Me<img src="" alt=""></div>
+            <!-- <div id="logo"><img src="" alt=""></div> -->
+            <input type="search" id="search_place" placeholder="장소를 검색하세요" />
+            <img id="search_icon" src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/000000/external-search-ui-dreamstale-lineal-dreamstale.png"/>
         </header>
 
         <nav>
             <ul>
-                <li>
+                <!-- <li>
                     <span id="menu_icon"></span>
                     <span class="menu_name">메뉴</span>
-                </li>
-                <li>
+                </li> -->
+                <li id="list_btn">
                     <span id="list_icon"></span>
                     <span class="menu_name">리스트</span>
                 </li>
-                <li>
+                <li id="home_btn">
                     <span id="home_icon"></span>
                     <span class="menu_name">홈</span>
                 </li>
-                <li>
+                <!-- <li>
                     <span id="bookmark_icon"></span>
                     <span class="menu_name">즐겨찾기</span>
-                </li>
+                </li> -->
                 <li id="user_btn">
                     <span id="user_icon"></span>
                     <span class="menu_name">MY</span>
@@ -55,6 +57,11 @@
                 <div id="start">
                     <div class="title"><h3>출발지</h3></div>
                     <input type="search" class="place_input" id="departure" placeholder="주소"/>
+                    <select class="select_time">
+                        <option value="">현재 시각 사용</option>
+                        <option value="AM">오전</option>
+                        <option value="PM">오후</option>
+                    </select>
                 </div>
 
                 <div id="place">
@@ -64,6 +71,7 @@
                             <div class="num_box"><h4>1</h4></div>
                             <div class="address_box">
                                 <p>0000 San Jose</p>
+                                <h5 class="eta">도착 예정 시간</h5>
                                 <span>무인 택배함에 보관</span>
                             </div>
                             <div class="place_menu">
@@ -74,6 +82,7 @@
                             <div class="num_box"><h4>2</h4></div>
                             <div class="address_box">
                                 <p>0000 Santa Clara</p>
+                                <h5 class="eta">도착 예정 시간</h5>
                                 <span>배송 후 문자 보내기</span>
                             </div>
                             <div class="place_menu">
@@ -84,6 +93,7 @@
                             <div class="num_box"><h4>3</h4></div>
                             <div class="address_box">
                                 <p>0000 Berekeley</p>
+                                <h5 class="eta">도착 예정 시간</h5>
                                 <span>9:00 AM 까지 배송</span>
                             </div>
                             <div class="place_menu">
@@ -96,11 +106,18 @@
                 
                 <div id="finish">
                     <div class="title"><h3>도착지</h3></div>
+                    <select class="select_arrive">
+                        <option value="">기존 설정</option>
+                        <option value="">출발지와 동일</option>
+                        <option value="">마지막 경유지</option>
+                        <option value="typing">직접 입력</option>
+                    </select>
                     <input type="search" class="place_input" id="arrive" placeholder="주소"/>
+                    
                 </div>
                 
                 <div id="route_btn">
-                    최적화
+                    <img src="https://img.icons8.com/material-outlined/24/FFFFFF/circular-arrows--v2.png"/>
                 </div>
             </article>
         </section>
@@ -111,6 +128,7 @@
                     <h3>김기찬 기사님</h3>
                 </div>
                 <div id="user_menu">
+                    <div>공지사항</div>
                     <div>개인 정보 수정</div>
                     <div>출발지 / 도착지 설정</div>
                     <div>리스트 관리</div>
@@ -125,6 +143,58 @@
 
         </section>
 
+        <!-- <section id="bookmark">
+            <div id="bookmark_wrap">
+                <div id="bookmark_title">
+                    <h3>즐겨찾기</h3>
+                </div>
+                <div id="bookmark_list">
+                    <div></div>
+                </div>
+            </div>
+        </section> -->
+
+        <section id="list"> 
+            <div id="list_wrap">
+                <div class="list_title">
+                    <h3>등록된 리스트</h3>
+                </div>
+                <div id="register_list">
+                    <div></div>
+                </div>
+                <div class="list_title">
+                    <h3>즐겨찾기</h3>
+                </div>
+                <div id="history_list">
+                    <div></div>
+                </div>
+                <div class="list_title">
+                    <h3>히스토리</h3>
+                </div>
+                <div id="history_list">
+                    <div></div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- <section id="menu">
+            <div id="menu_wrap">
+                <div id="menu_title">
+                    <h3>메뉴</h3>
+                </div>
+                <div id="menu_list">
+                    <div>공지사항</div>
+                    <div></div>
+                    <div>리스트 관리</div>
+                    <div>설정</div>
+                    <div>고객센터</div>
+                </div>
+                <div id="user_end">
+                    <div>종료</div>
+                    <div>로그아웃</div>
+                </div>
+            </div> -->
 
 
         
