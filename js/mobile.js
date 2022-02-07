@@ -17,7 +17,7 @@ $(function() {
         if(b==1){
             $("#route").stop().animate({"top":"80px"},500,"linear");
         }else{
-            $("#route").stop().animate({"top":drag_top_height},500,"linear");
+            $("#route").stop().animate({"top":route_position},500,"linear");
         }
     });
 
