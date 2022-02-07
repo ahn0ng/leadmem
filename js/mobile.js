@@ -28,9 +28,9 @@ var route_position
 
 function resize_home(){    
     screen_height =$(window).height();
-    var route_height = screen_height*0.85;
+    var route_height = screen_height*0.89;
     drag_top_height = route_height-0.02;
-    route_position = screen_height-110;
+    route_position = screen_height-90;
 
 
 
@@ -43,18 +43,23 @@ $(function() {
     var d = 0;
     var e = 0;
     var f = 0;
+  
+
 
     $("#user_btn").click(function(){
         c++;
         d=c%2;
 
         if(d==1){
+            $("#user_icon").css('background','url("https://img.icons8.com/fluency-systems-filled/48/71d4b0/menu.png") no-repeat center').css('background-size','contain');
+            $("#list_icon").css('background','url("https://img.icons8.com/material-outlined/50/000000/ingredients-list.png") no-repeat center').css('background-size','contain');
             $("#list").hide();
             e=e*0;
             f=f*0;
             $("#user").show();
             
         }else{
+            $("#user_icon").css('background','url("https://img.icons8.com/fluency-systems-filled/48/000000/menu.png") no-repeat center').css('background-size','contain');
             $("#user").hide();
         }
     });
@@ -63,12 +68,15 @@ $(function() {
         f=e%2;
 
         if(f==1){
+            $("#list_icon").css('background','url("https://img.icons8.com/material-outlined/50/71d4b0/ingredients-list.png") no-repeat center').css('background-size','contain');
+            $("#user_icon").css('background','url("https://img.icons8.com/fluency-systems-filled/48/000000/menu.png") no-repeat center').css('background-size','contain');
             $("#user").hide();
             c=c*0;
             d=d*0;
             $("#list").show();
             
         }else{
+            $("#list_icon").css('background','url("https://img.icons8.com/material-outlined/50/000000/ingredients-list.png") no-repeat center').css('background-size','contain');
             $("#list").hide();
         }
     });
@@ -80,7 +88,8 @@ $(function() {
         f=f*0;
         $("#user").hide();
         $("#list").hide();
-        
+        $("#user_icon").css('background','url("https://img.icons8.com/fluency-systems-filled/48/000000/menu.png") no-repeat center').css('background-size','contain');
+        $("#list_icon").css('background','url("https://img.icons8.com/material-outlined/50/000000/ingredients-list.png") no-repeat center').css('background-size','contain');
     });
 });
 
