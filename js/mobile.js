@@ -24,11 +24,11 @@ $(function() {
 });
 var screen_height;
 var drag_top_height;
-var route_position
+var route_position;
 
 function resize_home(){    
     screen_height =$(window).height();
-    var route_height = screen_height*0.89;
+    var route_height = screen_height*0.82;
     drag_top_height = route_height-0.02;
     route_position = screen_height-90;
 
