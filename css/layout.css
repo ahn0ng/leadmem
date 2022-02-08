@@ -194,7 +194,7 @@ a:hover {
 
   #home_icon {
     height: 30px;
-    background: url(../img/home.png) no-repeat;
+    background: url(../img/home2.png) no-repeat;
     background-size: contain;
     background-position: center;
     display: block;
@@ -217,8 +217,8 @@ a:hover {
 
   #search_place {
     border: 2px solid #71d4b0;
-    width: 90%;
-    height: 30px;
+    width: 85%;
+    height: 36px;
     border-radius: 100px;
     margin-top: 20px;
     position: relative;
@@ -231,8 +231,8 @@ a:hover {
   #search_icon {
     z-index: 999;
     position: absolute;
-    top: 40%;
-    right: 8%;
+    top: 43%;
+    right: 10%;
     cursor: pointer cc;
   }
 
@@ -287,6 +287,23 @@ a:hover {
     padding-left: 10px;
     margin-top: 10px;
     line-height: 20px;
+  }
+
+  #place_title {
+    width: 92%;
+    height: 20px;
+    float: left;
+  }
+
+  #switch_btn {
+    width: 8%;
+    height: 20px;
+    float: right;
+    display: block;
+  }
+
+  #switch_btn img {
+    cursor: pointer;
   }
 
   #start,
@@ -472,12 +489,14 @@ a:hover {
     display: flex;
   }
   #user_end div {
-    width: 50%;
+    width: 44%;
     text-align: center;
     line-height: 50px;
     border: 1px solid #71d4b0;
     border-radius: 100px;
+    margin-left: 4%;
   }
+
   #user_end div:hover {
     background-color: #71d4b0;
     color: #fff;
