@@ -69,6 +69,12 @@ $(function() {
         }else{
             $("#user_icon").css('background','url("https://img.icons8.com/fluency-systems-filled/48/000000/menu.png") no-repeat center').css('background-size','contain');
             $("#user").hide();
+            i=i*0;
+            j=j*0;
+            $("#register").hide();
+            g=g*0;
+            h=h*0;
+            $("#login").hide();
         }
     });
     $("#list_btn").click(function(){
@@ -82,6 +88,7 @@ $(function() {
             c=c*0;
             d=d*0;
             $("#list").show();
+    
             
         }else{
             $("#list_icon").css('background','url("https://img.icons8.com/material-outlined/50/000000/ingredients-list.png") no-repeat center').css('background-size','contain');
