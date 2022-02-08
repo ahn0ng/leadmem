@@ -17,6 +17,10 @@
   width: device-width;
 }
 
+html {
+  overflow: hidden;
+}
+
 body {
   background: #fff;
   font-family: "Noto+Sans+KR", sans-serif;
@@ -28,6 +32,7 @@ body {
   margin: 0px;
   letter-spacing: -0px;
   overflow: hidden;
+  overflow-x: hidden;
 
   /* touch-action: none;
   -webkit-overflow-scrolling: none;
