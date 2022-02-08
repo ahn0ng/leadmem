@@ -548,11 +548,12 @@ a:hover {
 
   .register_content {
     width: 100%;
-    height: 50px;
+    /* height: 50px; */
     display: flex;
     border: 1px solid #ddd;
     margin-bottom: 2%;
     cursor: pointer;
+    flex-wrap: wrap;
   }
 
   .content_info {
@@ -570,6 +571,7 @@ a:hover {
     width: 100%;
     margin-top: 10px;
     margin-left: 10px;
+    margin-bottom: 10px;
     float: left;
     /* 추가 */
     font-size: 0.2rem;
@@ -583,6 +585,34 @@ a:hover {
     color: #9b9b9b;
     font-size: 0.9rem;
   } */
+
+  .register_content:hover > .detail_info {
+    display: flex;
+  }
+
+  .register_content:hover {
+    border: 1px solid #71d4b0;
+  }
+
+  .detail_info div:hover {
+    background-color: #71d4b0;
+    color: #fff;
+  }
+
+  .detail_info {
+    width: 100%;
+    display: none;
+    transition: 0.5s;
+  }
+
+  .detail_info div {
+    width: 30%;
+    height: 20px;
+    line-height: 20px;
+    background-color: #ddd;
+    margin: 0 0 10px 10px;
+    text-align: center;
+  }
 
   .bookmark_box {
     width: 90%;
