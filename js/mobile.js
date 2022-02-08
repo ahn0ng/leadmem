@@ -103,9 +103,6 @@ $(function() {
         }
     });
 
-
-
-
 // 원본
     // $("#home_btn").click(function(){
     //     c=c*0;
