@@ -574,7 +574,7 @@ a:hover {
     margin-bottom: 10px;
     float: left;
     /* 추가 */
-    font-size: 0.2rem;
+    font-size: 0.4rem;
   }
 
   /* .content_info span {
@@ -603,14 +603,15 @@ a:hover {
     width: 100%;
     display: none;
     transition: 0.5s;
+    margin: 0 auto;
   }
 
   .detail_info div {
-    width: 30%;
+    width: 31%;
     height: 20px;
     line-height: 20px;
     background-color: #ddd;
-    margin: 0 0 10px 10px;
+    margin: 0 0 10px 1.75%;
     text-align: center;
   }
 
