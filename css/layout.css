@@ -457,7 +457,7 @@ a:hover {
 
   #user_wrap {
     width: 95%;
-    height: 100%;
+    height: calc(100% - 60px);
     margin: 20px auto 30px auto;
     position: relative;
     overflow: scroll;
@@ -562,7 +562,7 @@ a:hover {
     margin-top: 10px;
     margin-left: 10px;
     /* font-size: 13px; */
-    font-size: 1em;
+    font-size: 0.7rem;
   }
 
   .content_info p {
@@ -570,18 +570,17 @@ a:hover {
     margin-left: 10px;
     float: left;
     /* 추가 */
-    font-size: 0.9em;
+    font-size: 0.2rem;
   }
 
-  .content_info span {
+  /* .content_info span {
     display: block;
     float: right;
     margin-top: 10px;
     margin-right: 10px;
     color: #9b9b9b;
-    /* 추가 */
-    font-size: 0.9em;
-  }
+    font-size: 0.9rem;
+  } */
 
   .bookmark_box {
     width: 90%;
