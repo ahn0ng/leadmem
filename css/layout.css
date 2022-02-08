@@ -302,10 +302,11 @@ a:hover {
   }
 
   #switch_btn {
-    width: 10%;
+    width: 8%;
     height: 20px;
     float: right;
     display: block;
+    margin-right: 2%;
   }
 
   #switch_btn img {
@@ -523,6 +524,8 @@ a:hover {
     height: 100%;
     margin: 70px auto 70px auto;
     position: relative;
+    overflow-x: hidden;
+    overflow: scroll;
   }
 
   .list_title {
