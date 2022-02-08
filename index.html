@@ -17,16 +17,12 @@
     <div id="warp">
         <header>
             <!-- <div id="logo"><img src="" alt=""></div> -->
-            <input type="search" id="search_place" placeholder="Test_4" />
+            <input type="search" id="search_place" placeholder="Test_5" />
             <img id="search_icon" src="https://img.icons8.com/external-dreamstale-lineal-dreamstale/16/000000/external-search-ui-dreamstale-lineal-dreamstale.png"/>
         </header>
 
         <nav>
             <ul>
-                <!-- <li>
-                    <span id="menu_icon"></span>
-                    <span class="menu_name">메뉴</span>
-                </li> -->
                 <li id="list_btn">
                     <span id="list_icon"></span>
                     <span class="menu_name">리스트</span>
@@ -35,10 +31,6 @@
                     <span id="home_icon"></span>
                     <span class="menu_name">홈</span>
                 </li>
-                <!-- <li>
-                    <span id="bookmark_icon"></span>
-                    <span class="menu_name">즐겨찾기</span>
-                </li> -->
                 <li id="user_btn">
                     <span id="user_icon"></span>
                     <span class="menu_name">메뉴</span>
@@ -142,8 +134,8 @@
                     <div>고객센터</div>
                 </div>
                 <div id="user_end">
-                    <div>로그아웃</div>
-                    <div>종료</div>
+                    <div id="loginout_btn">로그아웃</div>
+                    <div id="end_btn">종료</div>
                 </div>
             </div>
 
@@ -190,7 +182,7 @@
                             <div class="sub_btn">
                                 <span>···</span>
                             </div>
-                          
+                        
                         </div>
                     </div>
                 </div>
@@ -256,8 +248,59 @@
         </section>
 
         <!-- 로그인 -->
-        <section>
+        <section id="login">
+            <div>
+                <span id="back_btn">
+                    <img src="https://img.icons8.com/material-rounded/24/000000/delete-sign.png"/>
+                </span>
+                <div class="login-form">
+                    <h1>Lead Me</h1>
+                    <form method="post" action="/leadme/login/index.php">
+                        <input type="text" name="username" class="text-field" placeholder="이메일" value="" />
+                        <input type="password" name="password" class="text-field" placeholder="비밀번호" />
+                        <input type="submit" value="로그인" class="submit-btn" name="submit" />
+                    </form>
+                
+                    <div class="links"> 
+                        
+                        <div id="register_btn">회원가입</div>
+                        <!-- <span>|</span> -->
+                        <div>비밀번호 찾기</div>
+                
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- 회원가입 -->
+
+        <section id="register">
+            <span id="back_btn2">
+                <img src="https://img.icons8.com/material-rounded/24/000000/delete-sign.png"/>
+            </span>
+            <div class="login-form">
+                <h1>Lead Me</h1>
+                <form>
+                <input type="text" name="email" class="text-field" placeholder="이메일">
+                <input type="password" name="password" class="text-field" placeholder="비밀번호">
+                <input type="name" name="name" class="text-field" placeholder="이름">
+                <input type="address" name="address" class="text-field" placeholder="주소">
+                <input type="tel" name="phone" class="text-field" placeholder="번호">
+                <label class="checkbox_register" for="available1">
+                    <input id="available1" name="available" type="checkbox" />
+                    <span>이메일 수신의 동의합니다</span>
+                </label>
+                <label class="checkbox_register" for="available1">
+                    <input id="available1" name="available" type="checkbox" />
+                    <span>이용약관과 개인정보취급방침에 동의합니다</span>
+                </label>
+                
+                <input type="submit" value="회원가입" class="submit-btn2">
+                <span>이미 가입 하셨다면<span id="login_pg"> 로그인</span> 하러가기</span>
+                </form>
+            </div>
+
+            
         </section>
 
 
