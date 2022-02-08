@@ -28,11 +28,9 @@ var route_position;
 
 function resize_home(){    
     screen_height =$(window).height();
-    var route_height = screen_height*0.82;
-    drag_top_height = route_height-0.02;
+    var route_height = screen_height*0.85;
+    // drag_top_height = route_height-0.02;
     route_position = screen_height-90;
-
-
 
     $("#route").css("top",route_position);
     $("#route").css("height",route_height);

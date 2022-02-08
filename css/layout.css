@@ -28,6 +28,12 @@ body {
   margin: 0px;
   letter-spacing: -0px;
   overflow: hidden;
+
+  /* touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hideen;
+
+  overscroll-behavior: none; */
 }
 
 html,
