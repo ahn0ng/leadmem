@@ -88,11 +88,18 @@ $(function() {
             c=c*0;
             d=d*0;
             $("#list").show();
+            i=i*0;
+            j=j*0;
+            $("#register").hide();
+            g=g*0;
+            h=h*0;
+            $("#login").hide();
     
             
         }else{
             $("#list_icon").css('background','url("https://img.icons8.com/material-outlined/50/000000/ingredients-list.png") no-repeat center').css('background-size','contain');
             $("#list").hide();
+    
         }
     });
 
