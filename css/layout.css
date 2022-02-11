@@ -284,7 +284,7 @@ a:hover {
   .title {
     width: 100%;
     height: 20px;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     margin-top: 10px;
     line-height: 20px;
     font-size: 3vw;
@@ -531,15 +531,66 @@ a:hover {
 
   .list_title {
     width: 100%;
-    height: 40px;
-    line-height: 40px;
+    height: 20px;
+    line-height: 20px;
     /* font-size: 15px; */
-    font-size: 4vw;
+    font-size: 3vw;
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
+  .test_btn:hover ~ .list_box {
+    display: block;
+  }
+
+  .test_btn2:hover ~ .list_box {
+    display: block;
+  }
+
+  .test_btn {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background: url("https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-down-arrows-those-icons-lineal-those-icons-1.png")
+      no-repeat center;
+    background-size: contain;
+  }
+
+  .test_btn2 {
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background: url("https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-down-arrows-those-icons-lineal-those-icons-1.png")
+      no-repeat center;
+    background-size: contain;
+  }
+
+  .test_btn:hover,
+  .test_btn2:hover {
+    background: url("https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-up-arrows-those-icons-lineal-those-icons.png")
+      no-repeat center;
+    background-size: contain;
+  }
+
   .list_box {
+    width: 90%;
+    margin: 0 auto;
+    display: none;
+  }
+
+  .list_box_first {
     width: 90%;
     margin: 0 auto;
   }
@@ -576,7 +627,7 @@ a:hover {
   }
 
   .content_info span {
-    width: 5%;
+    width: 4%;
     display: block;
     float: right;
     margin-top: 10px;
@@ -647,6 +698,32 @@ a:hover {
   }
   .bookmark_content p {
     margin: 10px 0 10px 10px;
+    font-size: 2vw;
+  }
+
+  .bookmark_content:hover > .detail_info2 {
+    display: flex;
+  }
+
+  .detail_info2 div:hover {
+    background-color: #71d4b0;
+    color: #fff;
+  }
+
+  .detail_info2 {
+    width: 100%;
+    display: none;
+    transition: 0.5s;
+    margin: 0 auto;
+  }
+
+  .detail_info2 div {
+    width: 46%;
+    height: 20px;
+    line-height: 20px;
+    background-color: #ddd;
+    margin: 0 0 10px 2%;
+    text-align: center;
     font-size: 2vw;
   }
 
