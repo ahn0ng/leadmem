@@ -689,6 +689,7 @@ a:hover {
     z-index: 9997;
     position: absolute;
     display: none;
+    overflow-x: hidden;
   }
 
   * {
@@ -766,6 +767,7 @@ a:hover {
     z-index: 9998;
     position: absolute;
     display: none;
+    overflow-x: hidden;
   }
 
   .checkbox_register {
