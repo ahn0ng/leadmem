@@ -52,6 +52,9 @@ $(function() {
     // 회원가입 변수
     var i = 0;
     var j = 0;
+    // 비번찾기 변수
+    var k = 0;
+    var l = 0;
 
 
     $("#user_btn").click(function(){
@@ -75,6 +78,9 @@ $(function() {
             g=g*0;
             h=h*0;
             $("#login").hide();
+            k=k*0;
+            l=l*0;
+            $("#password").hide();
         }
     });
     $("#list_btn").click(function(){
@@ -94,6 +100,9 @@ $(function() {
             g=g*0;
             h=h*0;
             $("#login").hide();
+            k=k*0;
+            l=l*0;
+            $("#password").hide();
     
             
         }else{
@@ -115,13 +124,16 @@ $(function() {
         h=h*0;
         i=i*0;
         j=j*0;
-        
+        k=k*0;
+        l=l*0;
+
         $("#user").hide();
         $("#list").hide();
         $("#user_icon").css('background','url("https://img.icons8.com/fluency-systems-filled/48/000000/menu.png") no-repeat center').css('background-size','contain');
         $("#list_icon").css('background','url("https://img.icons8.com/material-outlined/50/000000/ingredients-list.png") no-repeat center').css('background-size','contain');
         $("#login").hide();
         $("#register").hide();
+        $("#password").hide();
 
         }else if(b==1){
             b=b*0;
@@ -182,7 +194,33 @@ $(function() {
         $("#register").hide();
     });
 
+    // 패스워드 찾기
     
+    $("#password_btn").click(function(){
+        k++;
+        l=k%2;
+
+        if(l==1){
+            $("#password").show();
+            
+        }else{
+        
+            $("#password").hide();
+        }
+    });
+
+    $("#back_btn3").click(function(){
+        k=k*0;
+        l=l*0;
+        $("#password").hide();
+    });
+
+    $("#login_pg2").click(function(){
+        k=k*0;
+        l=l*0;
+        $("#password").hide();
+    });
+
 });
 
 

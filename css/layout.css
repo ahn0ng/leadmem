@@ -46,6 +46,7 @@ body {
   width: 100%;
   height: 100%;
   letter-spacing: 0px;
+  -webkit-appearance: none;
 }
 div,
 p,
@@ -132,21 +133,10 @@ a:hover {
   header {
     width: 100%;
     height: 70px;
-    /* background-color: #71d4b0; */
+
     position: fixed;
     z-index: 9995;
   }
-
-  /* #logo {
-    width: 100px;
-    height: 70px;
-    line-height: 70px;
-    margin: 0 auto;
-    font-size: 20px;
-    text-align: center;
-    color: #fff;
-    font-weight: 900;
-  } */
 
   /* gnb */
 
@@ -218,6 +208,7 @@ a:hover {
     margin-top: 5px;
     display: block;
     text-align: center;
+    font-size: 3vw;
   }
 
   #search_place {
@@ -287,6 +278,7 @@ a:hover {
     height: 40px;
     text-align: center;
     line-height: 40px;
+    font-size: 3vw;
   }
 
   .title {
@@ -295,6 +287,7 @@ a:hover {
     padding-left: 10px;
     margin-top: 10px;
     line-height: 20px;
+    font-size: 3vw;
   }
 
   #place_title {
@@ -365,7 +358,7 @@ a:hover {
     width: 20%;
     text-align: center;
     line-height: 60px;
-    font-size: 20px;
+    font-size: 4vw;
   }
 
   .address_box {
@@ -386,16 +379,19 @@ a:hover {
   .address_box span {
     display: inline-flex;
     width: 50%;
+    font-size: 2vw;
   }
   .address_box p {
     font-weight: 900;
     width: 50%;
     display: block;
+    font-size: 3vw;
   }
 
   .eta {
     width: 50%;
     display: block;
+    font-size: 2vw;
   }
 
   .place_menu {
@@ -538,7 +534,7 @@ a:hover {
     height: 40px;
     line-height: 40px;
     /* font-size: 15px; */
-    font-size: 1.33em;
+    font-size: 4vw;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -566,7 +562,7 @@ a:hover {
     margin-top: 10px;
     margin-left: 10px;
     /* font-size: 13px; */
-    font-size: 0.7rem;
+    font-size: 3vw;
   }
 
   .content_info p {
@@ -576,7 +572,7 @@ a:hover {
     margin-bottom: 10px;
     float: left;
     /* 추가 */
-    font-size: 0.5rem;
+    font-size: 2vw;
   }
 
   .content_info span {
@@ -586,7 +582,7 @@ a:hover {
     margin-top: 10px;
     margin-right: 10px;
     color: #9b9b9b;
-    font-size: 0.5rem;
+    font-size: 2vw;
   }
 
   .register_content:hover > .detail_info {
@@ -616,6 +612,7 @@ a:hover {
     background-color: #ddd;
     margin: 0 0 10px 1.75%;
     text-align: center;
+    font-size: 2vw;
   }
 
   .bookmark_box {
@@ -644,13 +641,13 @@ a:hover {
   }
 
   .bookmark_content h4 {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-left: 10px;
-    font-size: 1rem;
+    font-size: 3vw;
   }
   .bookmark_content p {
     margin: 10px 0 10px 10px;
-    font-size: 0.5rem;
+    font-size: 2vw;
   }
 
   .sub_btn {
@@ -658,21 +655,6 @@ a:hover {
     font-size: 20px;
     line-height: 50px;
     text-align: center;
-  }
-
-  .sub_menu {
-    width: 50px;
-    position: absolute;
-    right: -30px;
-    display: none;
-  }
-
-  .sub_menu div {
-    width: 100%;
-    height: 20px;
-    text-align: center;
-    line-height: 20px;
-    background-color: #ddd;
   }
 
   /* 로그인 */
@@ -788,6 +770,28 @@ a:hover {
     margin-bottom: 15px;
     color: white;
     margin-top: 20px;
+    cursor: pointer;
+  }
+
+  /* 비밀번호 찾기 */
+
+  #back_btn3 {
+    float: right;
+    margin: 20px 20px 0 0;
+    cursor: pointer;
+  }
+
+  #password {
+    width: 100%;
+    height: 100%;
+    background-color: #eeeff1;
+    z-index: 9998;
+    position: absolute;
+    display: none;
+    overflow-x: hidden;
+  }
+  #login_pg2 {
+    color: #71d4b0;
     cursor: pointer;
   }
 }
