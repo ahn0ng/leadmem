@@ -229,12 +229,9 @@ a:hover {
 
   #route {
     width: 100%;
-    /* height: ; */
     position: absolute;
     z-index: 9996;
     border-radius: 50px 50px 0 0;
-    /* bottom: 0px; */
-    /* bottom: -60%; */
     background-color: #eeeff1;
   }
 
@@ -277,7 +274,6 @@ a:hover {
   .title {
     width: 100%;
     height: 20px;
-    /* padding-left: 10px; */
     margin-top: 10px;
     line-height: 20px;
     font-size: 3vw;
@@ -368,7 +364,6 @@ a:hover {
   .eta {
     height: 20px;
     line-height: 20px;
-    /* padding-left: 10px; */
   }
 
   .address_box span {
@@ -619,22 +614,20 @@ a:hover {
     width: 100%;
     margin-top: 10px;
     margin-left: 10px;
-    /* font-size: 13px; */
     font-size: 3vw;
   }
 
   .content_info p {
-    width: 85%;
+    width: 80%;
     margin-top: 10px;
     margin-left: 10px;
     margin-bottom: 10px;
     float: left;
-    /* 추가 */
     font-size: 2vw;
   }
 
   .content_info span {
-    width: 4%;
+    width: 5%;
     display: block;
     float: right;
     margin-top: 10px;
@@ -653,6 +646,11 @@ a:hover {
 
   .detail_info div:hover {
     background-color: #71d4b0;
+    color: #fff;
+  }
+
+  .detail_info div:nth-child(3):hover {
+    background-color: red;
     color: #fff;
   }
 
@@ -716,6 +714,11 @@ a:hover {
 
   .detail_info2 div:hover {
     background-color: #71d4b0;
+    color: #fff;
+  }
+
+  .detail_info2 div:nth-child(2):hover {
+    background-color: red;
     color: #fff;
   }
 
