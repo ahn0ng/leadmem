@@ -446,7 +446,7 @@ a:hover {
 
   #user_wrap {
     width: 95%;
-    height: calc(100% - 90px);
+    height: calc(100% - 60px);
     margin: 20px auto 30px auto;
     position: relative;
     overflow: scroll;
@@ -517,7 +517,7 @@ a:hover {
 
   #list_wrap {
     width: 80%;
-    height: calc(100% - 90px);
+    height: calc(100% - 60px);
     margin: 20px auto 30px auto;
     position: relative;
     overflow-x: hidden;
