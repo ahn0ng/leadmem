@@ -1,5 +1,6 @@
 @charset "utf-8";
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap"); */
+@import url("https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css");
 
 @-ms-viewport {
   width: device-width;
@@ -23,7 +24,7 @@ html {
 
 body {
   background: #fff;
-  font-family: "Noto+Sans+KR", sans-serif;
+  font-family: "NanumSquare";
   font-size: 12px;
   color: #2d2d2d;
   line-height: 100%;
@@ -161,46 +162,33 @@ a:hover {
     cursor: pointer;
   }
 
-  #menu_icon {
-    height: 40px;
-    background: url("https://img.icons8.com/material-outlined/48/000000/user-male-circle.png")
-      no-repeat;
-    background-size: contain;
-    background-position: center;
-    display: block;
-  }
-
   #list_icon {
-    height: 30px;
+    width: 50%;
+    height: 50%;
     background: url("https://img.icons8.com/material-outlined/50/000000/ingredients-list.png")
       no-repeat center;
     background-size: contain;
     display: block;
-  }
-
-  #bookmark_icon {
-    height: 40px;
-    background: url("https://img.icons8.com/fluency-systems-regular/48/000000/star--v1.png")
-      no-repeat;
-    background-size: contain;
-    background-position: center;
-    display: block;
+    margin: 0 auto;
   }
 
   #home_icon {
-    height: 30px;
-    background: url(../img/home2.png) no-repeat;
+    width: 50%;
+    height: 50%;
+    background: url(../img/home2.png) no-repeat center;
     background-size: contain;
-    background-position: center;
     display: block;
+    margin: 0 auto;
   }
 
   #user_icon {
-    height: 30px;
+    width: 50%;
+    height: 50%;
     background: url("https://img.icons8.com/fluency-systems-filled/48/000000/menu.png")
       no-repeat center;
     background-size: contain;
     display: block;
+    margin: 0 auto;
   }
 
   .menu_name {
@@ -266,7 +254,7 @@ a:hover {
 
   #route_wrap {
     width: 90%;
-    height: calc(100% - 60px);
+    height: calc(100% - 90px);
     margin: 20px auto 0 auto;
     overflow: scroll;
     overflow-x: hidden;
@@ -275,9 +263,9 @@ a:hover {
   }
 
   .user_name {
-    height: 40px;
+    height: 20px;
     text-align: center;
-    line-height: 40px;
+    line-height: 20px;
     font-size: 3vw;
   }
 
@@ -298,7 +286,7 @@ a:hover {
 
   #switch_btn {
     width: 8%;
-    height: 20px;
+    height: 8%;
     float: right;
     display: block;
     margin-right: 2%;
@@ -323,6 +311,7 @@ a:hover {
     margin-top: 10px;
     padding: 0 10px 0 10px;
     background-color: #ddd;
+    font-size: 3vw;
   }
 
   .select_time {
@@ -331,6 +320,7 @@ a:hover {
     background-color: #ddd;
     border-radius: 5px;
     padding: 3px 5px;
+    font-size: 3vw;
   }
 
   #place {
@@ -346,7 +336,7 @@ a:hover {
 
   .place_1 {
     width: 100%;
-    height: 60px;
+    height: 40px;
     display: flex;
     position: relative;
     border-radius: 10px;
@@ -371,8 +361,8 @@ a:hover {
   .address_box p,
   .address_box span,
   .eta {
-    height: 30px;
-    line-height: 30px;
+    height: 20px;
+    line-height: 20px;
     /* padding-left: 10px; */
   }
 
@@ -421,11 +411,11 @@ a:hover {
   }
 
   #route_btn {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     margin: 30px auto;
     text-align: center;
-    line-height: 50px;
+    line-height: 30px;
     border-radius: 100px;
     color: #fff;
     background-color: #71d4b0;
@@ -438,6 +428,7 @@ a:hover {
     background-color: #ddd;
     border-radius: 5px;
     padding: 3px 5px;
+    font-size: 3vw;
   }
 
   /* 메뉴 섹션 */
@@ -453,19 +444,20 @@ a:hover {
 
   #user_wrap {
     width: 95%;
-    height: calc(100% - 60px);
+    height: calc(100% - 90px);
     margin: 20px auto 30px auto;
     position: relative;
     overflow: scroll;
     overflow-x: hidden;
+    top: 0;
   }
 
   #user_info {
     width: 100%;
-    height: 80px;
+    height: 30px;
     text-align: center;
-    line-height: 80px;
-    font-size: 15px;
+    line-height: 30px;
+    font-size: 3vw;
   }
 
   #user_menu {
@@ -478,10 +470,11 @@ a:hover {
     width: 80%;
     height: 30px;
     background-color: #ddd;
-    margin: 20px auto 0 auto;
+    margin: 4% auto 0 auto;
     border-radius: 100px;
     line-height: 30px;
     cursor: pointer;
+    font-size: 2vh;
   }
 
   #user_menu div:hover {
@@ -491,17 +484,18 @@ a:hover {
 
   #user_end {
     width: 80%;
-    height: 50px;
-    margin: 50px auto 0 auto;
+    height: 30px;
+    margin: 4% auto 0 auto;
     display: flex;
+    justify-content: space-around;
   }
   #user_end div {
     width: 44%;
     text-align: center;
-    line-height: 50px;
+    line-height: 30px;
     border: 1px solid #71d4b0;
     border-radius: 100px;
-    margin-left: 4%;
+    font-size: 2vh;
   }
 
   #user_end div:hover {
@@ -521,7 +515,7 @@ a:hover {
 
   #list_wrap {
     width: 80%;
-    height: calc(100% - 60px);
+    height: calc(100% - 90px);
     margin: 20px auto 30px auto;
     position: relative;
     overflow-x: hidden;
@@ -541,51 +535,37 @@ a:hover {
 
   /* 아코티언 */
 
-  #menuBtn {
-    display: none;
-  }
-  #menuBtn2 {
+  #menuBtn,
+  #menuBtn2,
+  #menuBtn3 {
     display: none;
   }
 
   #menuBtn:checked ~ .list_box,
-  #menuBtn2:checked ~ .list_box {
+  #menuBtn3:checked ~ .list_box {
     display: block;
   }
 
-  #menuBtn2:checked ~ .test_btn {
+  #menuBtn2:checked ~ .bookmark_box {
+    display: flex;
+  }
+
+  #menuBtn:checked ~ .test_btn,
+  #menuBtn2:checked ~ .test_btn2,
+  #menuBtn3:checked ~ .test_btn3 {
     background: url("https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-up-arrows-those-icons-lineal-those-icons.png")
       no-repeat center;
     background-size: contain;
   }
 
-  #menuBtn:checked ~ .test_btn2 {
-    background: url("https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-up-arrows-those-icons-lineal-those-icons.png")
-      no-repeat center;
-    background-size: contain;
-  }
-
-  .test_btn {
+  .test_btn,
+  .test_btn2,
+  .test_btn3 {
     width: 12px;
     height: 12px;
     display: inline-block;
     cursor: pointer;
     position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
-    margin-bottom: 10px;
-    margin-top: 10px;
-    background: url("https://img.icons8.com/external-those-icons-lineal-those-icons/12/000000/external-down-arrows-those-icons-lineal-those-icons-1.png")
-      no-repeat center;
-    background-size: contain;
-  }
-
-  .test_btn2 {
-    width: 12px;
-    height: 12px;
-    cursor: pointer;
-    position: relative;
-    display: inline-block;
     left: 50%;
     transform: translate(-50%, 0);
     margin-bottom: 10px;
@@ -608,6 +588,14 @@ a:hover {
     margin: 0 auto;
   }
 
+  .bookmark_box_first {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   .register_content {
     width: 100%;
     /* height: 50px; */
@@ -621,6 +609,7 @@ a:hover {
   .content_info {
     width: 90%;
   }
+
   .content_info h4 {
     width: 100%;
     margin-top: 10px;
@@ -685,11 +674,12 @@ a:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    display: none;
   }
 
   .bookmark_content {
     width: 31%;
-    /* height: 80px; */
+    height: 31%;
     border: 1px solid #2d2d2d;
     margin-top: 3%;
     cursor: pointer;
@@ -707,6 +697,7 @@ a:hover {
   .bookmark_content h4 {
     margin-top: 10px;
     margin-left: 10px;
+    margin-right: 10px;
     font-size: 3vw;
   }
   .bookmark_content p {
@@ -731,11 +722,11 @@ a:hover {
   }
 
   .detail_info2 div {
-    width: 46%;
+    width: 44%;
     height: 20px;
     line-height: 20px;
     background-color: #ddd;
-    margin: 0 0 10px 2%;
+    margin: 0 0 10px 4%;
     text-align: center;
     font-size: 2vw;
   }
@@ -766,7 +757,7 @@ a:hover {
 
   * {
     box-sizing: border-box;
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: "NanumSquare", sans-serif;
     border-radius: 5px;
   }
 
