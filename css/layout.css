@@ -170,6 +170,7 @@ a:hover {
     background-size: contain;
     display: block;
     margin: 0 auto;
+    margin-top: 5px;
   }
 
   #home_icon {
@@ -179,6 +180,7 @@ a:hover {
     background-size: contain;
     display: block;
     margin: 0 auto;
+    margin-top: 5px;
   }
 
   #user_icon {
@@ -189,6 +191,7 @@ a:hover {
     background-size: contain;
     display: block;
     margin: 0 auto;
+    margin-top: 5px;
   }
 
   .menu_name {
