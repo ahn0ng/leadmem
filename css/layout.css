@@ -752,10 +752,11 @@ a:hover {
     float: right;
     margin: 20px 20px 0 0;
     cursor: pointer;
+    z-index: 9999;
   }
   #login {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 60px);
     background-color: #eeeff1;
     z-index: 9997;
     position: absolute;
@@ -781,7 +782,7 @@ a:hover {
     position: absolute;
     top: 35%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -40%);
   }
 
   .login-form h1 {
@@ -793,7 +794,7 @@ a:hover {
   }
 
   .text-field {
-    font-size: 14px;
+    font-size: 3vw;
     padding: 10px;
     border: none;
     width: 260px;
@@ -801,7 +802,7 @@ a:hover {
   }
 
   .submit-btn {
-    font-size: 14px;
+    font-size: 4vw;
     border: none;
     padding: 10px;
     width: 260px;
@@ -818,7 +819,7 @@ a:hover {
 
   .links div {
     display: inline;
-    font-size: 12px;
+    font-size: 3vw;
     color: #9b9b9b;
     margin-left: 20px;
     cursor: pointer;
@@ -830,10 +831,11 @@ a:hover {
     float: right;
     margin: 20px 20px 0 0;
     cursor: pointer;
+    z-index: 9999;
   }
   #register {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 60px);
     background-color: #eeeff1;
     z-index: 9998;
     position: absolute;
@@ -851,7 +853,7 @@ a:hover {
   }
 
   .submit-btn2 {
-    font-size: 14px;
+    font-size: 4vw;
     border: none;
     padding: 10px;
     width: 260px;
@@ -868,11 +870,12 @@ a:hover {
     float: right;
     margin: 20px 20px 0 0;
     cursor: pointer;
+    z-index: 9999;
   }
 
   #password {
     width: 100%;
-    height: 100%;
+    height: calc(100% - 60px);
     background-color: #eeeff1;
     z-index: 9998;
     position: absolute;
