@@ -7,7 +7,6 @@ function resize_home(){
     screen_height =$(window).height();
     var route_height = screen_height*0.85;
     var menu_height = screen_height*0.95;
-    // drag_top_height = route_height-0.02;
     route_position = screen_height-90;
 
     $("#route").css("top",route_position);
@@ -113,6 +112,7 @@ $(function() {
     });
 
     // 홈 버튼기능
+
     $("#home_btn").click(function(){
 
         if(d==1 || f==1){
@@ -194,7 +194,7 @@ $(function() {
         $("#register").hide();
     });
 
-    // 패스워드 찾기
+    // 비밀번호 찾기
     
     $("#password_btn").click(function(){
         k++;

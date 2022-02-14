@@ -145,6 +145,7 @@ a:hover {
     width: 100%;
     display: flex;
   }
+
   nav li {
     width: 33.3%;
     height: 50px;
@@ -185,7 +186,7 @@ a:hover {
     margin-top: 5px;
   }
 
-  .menu_name {
+  .nav_name {
     height: 30px;
     margin-top: 5px;
     display: block;
