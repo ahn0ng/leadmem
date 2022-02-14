@@ -226,3 +226,28 @@ $(function() {
 
 
 
+// 확대 방지 테스트
+
+$(function(){
+document.documentElement.addEventListener('touchstart', function (event) {
+    if (event.touches.length > 1) {
+         event.preventDefault(); 
+       } 
+   }, false);
+
+var lastTouchEnd = 0; 
+
+document.documentElement.addEventListener('touchend', function (event) {
+    var now = (new Date()).getTime();
+    if (now - lastTouchEnd <= 300) {
+         event.preventDefault(); 
+       } lastTouchEnd = now; 
+   }, false);
+
+});
+
+$(function(){
+    document.addEventListener('touchmove', function (event) {
+        if (event.scale !== 1) { event.preventDefault(); }
+      }, false);
+});
