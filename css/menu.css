@@ -24,7 +24,8 @@
   height: 30px;
   text-align: center;
   line-height: 30px;
-  font-size: 3vw;
+  /* font-size: 3vw; */
+  font-size: 2vh;
 }
 
 #menu_menu {
@@ -118,7 +119,8 @@
 }
 
 .text-field {
-  font-size: 3vw;
+  /* font-size: 3vw; */
+  font-size: 2vh;
   padding: 10px;
   border: none;
   width: 260px;
@@ -126,7 +128,8 @@
 }
 
 .submit-btn {
-  font-size: 4vw;
+  /* font-size: 4vw; */
+  font-size: 3vh;
   border: none;
   padding: 10px;
   width: 100%;
@@ -143,7 +146,8 @@
 
 .links div {
   display: inline;
-  font-size: 3vw;
+  /* font-size: 3vw; */
+  font-size: 2vh;
   color: #9b9b9b;
   margin-left: 20px;
   cursor: pointer;
@@ -176,7 +180,8 @@
 }
 
 .submit-btn2 {
-  font-size: 4vw;
+  /* font-size: 4vw; */
+  font-size: 3vh;
   border: none;
   padding: 10px;
   width: 100%;
