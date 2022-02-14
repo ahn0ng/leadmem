@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background: #fff;
+  background: #eeeff1;
   font-family: "NanumSquare";
   font-size: 12px;
   color: #2d2d2d;
@@ -121,6 +121,8 @@ a:hover {
   position: relative;
   /* 임시 지도 */
   background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 header {
   width: 100%;
