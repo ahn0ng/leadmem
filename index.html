@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" />
     <meta name="HandheldFriendly" content="true" />
-    <link href="css/layout.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link href="css/route.css" rel="stylesheet" type="text/css">
+    <link href="css/menu.css" rel="stylesheet" type="text/css">
+    <link href="css/list.css" rel="stylesheet" type="text/css">
     <title>Lead Me Mobile</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript" text="javascript"></script>
@@ -32,13 +35,14 @@
                     <span id="home_icon"></span>
                     <span class="menu_name">홈</span>
                 </li>
-                <li id="user_btn">
-                    <span id="user_icon"></span>
+                <li id="menu_btn">
+                    <span id="menu_icon"></span>
                     <span class="menu_name">메뉴</span>
                 </li>
             </ul>
         </nav>
 
+        <!-- 최적화 루트 -->
         <section id="route">
             <div class="drag_bar"><span></span></div>
             <article id="route_wrap">
@@ -120,27 +124,7 @@
             </article>
         </section>
 
-        <section id="user">
-            <div id="user_wrap">
-                <div id="user_info">
-                    <h3>김기찬 기사님</h3>
-                </div>
-                <div id="user_menu">
-                    <div>공지사항</div>
-                    <div>개인 정보 수정</div>
-                    <div>출발지 / 도착지 설정</div>
-                    <div>엑셀로 경로 추가</div>
-                    <div>설정</div>
-                    <div>고객센터</div>
-                </div>
-                <div id="user_end">
-                    <div id="loginout_btn">로그아웃</div>
-                    <div id="end_btn">종료</div>
-                </div>
-            </div>
-
-        </section>
-
+        <!-- 등록된 경로 리스트, 즐겨찾기, 히스토리 -->
         <section id="list"> 
             <div id="list_wrap">
                 <div class="list_title">
@@ -326,6 +310,28 @@
             </div>
         </section>
 
+        <!-- 유저 메뉴 -->
+        <section id="menu">
+            <div id="menu_wrap">
+                <div id="user_info">
+                    <h3>김기찬 기사님</h3>
+                </div>
+                <div id="menu_menu">
+                    <div>공지사항</div>
+                    <div>개인 정보 수정</div>
+                    <div>출발지 / 도착지 설정</div>
+                    <div>엑셀로 경로 추가</div>
+                    <div>설정</div>
+                    <div>고객센터</div>
+                </div>
+                <div id="menu_end">
+                    <div id="loginout_btn">로그아웃</div>
+                    <div id="end_btn">종료</div>
+                </div>
+            </div>
+
+        </section>
+
         <!-- 로그인 -->
         <section id="login">
             <div>
@@ -399,6 +405,11 @@
             </div>
         </section>
 
+
+        <!-- 엑셀 -->
+        <scetion>
+            
+        </scetion>
         
     </div>
 </body>
