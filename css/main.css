@@ -191,7 +191,7 @@ a:hover {
     margin-top: 5px;
     display: block;
     text-align: center;
-    font-size: 3vw;
+    font-size: 2vh;
   }
 
   #search_place {
@@ -214,7 +214,7 @@ a:hover {
     position: absolute;
     top: 45%;
     right: 12%;
-    cursor: pointer cc;
+    cursor: pointer;
   }
 }
 
