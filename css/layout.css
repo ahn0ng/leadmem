@@ -624,6 +624,11 @@ a:hover {
     margin-bottom: 10px;
     float: left;
     font-size: 2vw;
+
+    /* 추가적인 요소 */
+    text-overflow: ellipsis;
+    overflow: scroll;
+    white-space: nowrap;
   }
 
   .content_info span {
@@ -702,10 +707,20 @@ a:hover {
     margin-left: 10px;
     margin-right: 10px;
     font-size: 3vw;
+
+    /* 추가적인 요소 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
   .bookmark_content p {
     margin: 10px 0 10px 10px;
     font-size: 2vw;
+
+    /* 추가적인 요소 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .bookmark_content:hover > .detail_info2 {
@@ -752,7 +767,6 @@ a:hover {
     float: right;
     margin: 20px 20px 0 0;
     cursor: pointer;
-    z-index: 9999;
   }
   #login {
     width: 100%;
@@ -772,7 +786,7 @@ a:hover {
 
   .login-form {
     width: 300px;
-    background-color: #eeeff1;
+    /* background-color: #eeeff1; */
     margin-right: auto;
     margin-left: auto;
     margin-top: 50px;
@@ -783,6 +797,8 @@ a:hover {
     top: 35%;
     left: 50%;
     transform: translate(-50%, -40%);
+    z-index: 9998;
+    overflow-x: hidden;
   }
 
   .login-form h1 {
@@ -831,15 +847,14 @@ a:hover {
     float: right;
     margin: 20px 20px 0 0;
     cursor: pointer;
-    z-index: 9999;
   }
   #register {
     width: 100%;
     height: calc(100% - 60px);
     background-color: #eeeff1;
-    z-index: 9998;
     position: absolute;
     display: none;
+    z-index: 9997;
     overflow-x: hidden;
   }
 
@@ -870,7 +885,6 @@ a:hover {
     float: right;
     margin: 20px 20px 0 0;
     cursor: pointer;
-    z-index: 9999;
   }
 
   #password {
