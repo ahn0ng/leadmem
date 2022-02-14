@@ -209,7 +209,7 @@ $(function() {
         }
     });
 
-    $("#back_btn").click(function(){
+    $("#back_btn3").click(function(){
         k=k*0;
         l=l*0;
         $("#password").hide();
