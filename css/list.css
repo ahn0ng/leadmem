@@ -74,18 +74,18 @@
 /* 아코디언 */
 
 .list_box {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: none;
 }
 
 .list_box_first {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
 }
 
 .bookmark_box_first {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -178,7 +178,7 @@
 }
 
 .bookmark_box {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
